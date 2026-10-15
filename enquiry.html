@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    
+
+<br>
+        <h2>Enquiries</h2>
+        <table>
+            <tr>
+                <td> <label for="fullname">Full Name:</label> </td>
+                 <td> <input type="text" id="fullname" name="fullname"> </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="{0-9}{10}"
+                placeholder="e.g. 0123456789"></td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label for="subject">Subjects you can tutor:</label></td>
+                <td><input
+                    type="subject"
+                    id="subject"
+                    name="subject you can tutor"
+                    minlength="15"
+                    pattern="(?=.*[a-z]).{15,}"
+                    aria-describedby="subjects to tutor"
+                    required
+                    ></td>
+            </tr>
